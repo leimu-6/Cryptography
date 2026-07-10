@@ -104,7 +104,7 @@ SAN：X.509 v3 扩展，专门存储全部服务域名，支持多条 DNS 记录
 匹配规则：*.myserver.com 仅匹配一级子域名，如www.myserver.com、mail.myserver.com；
 局限性：
 无法匹配多级子域名：a.b.myserver.com 不被*.myserver.com匹配；
-通配符仅能放在最左侧 DNS 段，www.*.myserver.com无效；
+通配符只能放在最左侧 DNS 段，www.*.myserver.com无效；
 子域名下的独立业务存在泄露风险：若某一子站点私钥泄露，整张通配符证书全部不可信。
 11. 证书透明度 CT（Certificate Transparency）
 定义：一套公开日志审计系统，所有公网 CA 签发的证书必须提交至公共 CT 日志服务器永久存档。
